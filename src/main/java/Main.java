@@ -24,7 +24,7 @@ public class Main {
         arrlist.add("Tree");
         arrlist.add("Four");
 
-        arrlist.set(2,"Three");
+        arrlist.set(arrlist.indexOf("Tree"),"Three");
 
         System.out.println(arrlist);
 
@@ -36,7 +36,7 @@ public class Main {
 
 //      Task #6
         Number[] arrayAvarage = {2,4,6,2,3};
-        System.out.println("Avarage value of array: " + ArrayUtils.avg(arrayAvarage));
+        System.out.println("Average value of array: " + ArrayUtils.avg(arrayAvarage));
 
 //      Task #7
         ArrayList<Integer> arrayList = new ArrayList<>();
