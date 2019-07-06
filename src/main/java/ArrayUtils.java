@@ -30,11 +30,14 @@ public class ArrayUtils {
     }
 
     public static ArrayList<Integer> divisibleby(ArrayList<Integer> arrlist, int divby) {
-        for (int i = 0; i < arrlist.size(); i++) {
+        int i = 0;
+        while (i < arrlist.size()) {
             if (arrlist.get(i) % divby == 0) {
                 arrlist.remove(i);
             }
+            else i++;
         }
+
         return arrlist;
     }
 }
